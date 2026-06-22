@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPARK Senior Health</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold:   #d7a920;
+      --red:    #bf4136;
+      --orange: #d28922;
+      --blue-10: hsl(226, 81%, 10%);
+      --pale-97: hsl(220, 27%, 97%);
+      --font-serif: 'Libre Baskerville', Georgia, serif;
+      --font-mono:  'IBM Plex Mono', monospace;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background: var(--blue-10);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: var(--font-serif);
+    }
+
+    .splash {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+      text-align: center;
+    }
+
+    .splash-logo svg {
+      width: 110px;
+      height: auto;
+      display: block;
+    }
+
+    .splash-name {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .spark-word {
+      font-family: var(--font-serif);
+      font-size: clamp(48px, 8vw, 80px);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      background: linear-gradient(90deg, var(--gold), var(--red));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .senior-health {
+      font-family: var(--font-mono);
+      font-size: clamp(13px, 2vw, 17px);
+      font-weight: 400;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(245, 249, 253, 0.55);
+    }
+
+    .divider {
+      width: 48px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--gold), var(--red));
+      border-radius: 2px;
+    }
+
+    .tagline {
+      font-family: var(--font-mono);
+      font-size: clamp(10px, 1.4vw, 13px);
+      color: rgba(245, 249, 253, 0.35);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <div class="splash">
+
+    <!-- Logo -->
+    <div class="splash-logo">
+      <svg width="110" height="124" viewBox="0 0 186 209" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="splash-grad" x1="0" y1="0" x2="186" y2="209" gradientUnits="userSpaceOnUse">
+            <stop offset="0%"   stop-color="#d7a920"/>
+            <stop offset="50%"  stop-color="#d28922"/>
+            <stop offset="100%" stop-color="#bf4136"/>
+          </linearGradient>
+        </defs>
+        <path d="M92.0113 49.8855L102.222 85.6653L138.314 76.6185L112.433 103.351L138.314 130.084L102.222 121.037L92.0113 156.817L81.8002 121.037L45.7085 130.084L71.5891 103.351L45.7085 76.6185L81.8002 85.6653L92.0113 49.8855Z" fill="url(#splash-grad)"/>
+        <path d="M46.2691 30.0935L93.0905 79.3753L125.888 47.6233L114.789 91.9028L158.686 104.43L114.789 116.958L138.159 178.767L93.0905 129.485L60.2929 161.237L71.3921 116.958L27.4954 104.43L71.3921 91.9028L46.2691 30.0935Z" fill="url(#splash-grad)"/>
+      </svg>
+    </div>
+
+    <!-- Name -->
+    <div class="splash-name">
+      <div class="spark-word">SPARK</div>
+      <div class="senior-health">Senior Health</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="tagline">Igniting Rural Medicare Primary Care</div>
+
+  </div>
+</body>
+</html>
